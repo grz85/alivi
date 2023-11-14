@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Alivio</title>
@@ -18,9 +20,9 @@
         <div class="header-wrapper">
             <a class="header__logo" href="/"><img src="images/logo-alivio.svg" alt="logo-alivio"></a>
             <nav class="header__nav">
-                <ul class="header__ul">
+                <ul class="header__ul " id="ul">
                     <li class="header__li">
-                        <a href="/" class="header__a">Why Alivio</a>
+                        <a href="/" class="header__a" >Why Alivio</a>
                     </li>
 
                     <li class="header__li">
@@ -34,13 +36,20 @@
                     <li class="header__li">
                         <a href="/" class="header__a">Pricing</a>
                     </li>
+                    <span class="material-symbols-outlined close" onclick="navToggle()">
+                        close
+                        </span>
                 </ul>
             </nav>
             <div class="header__cta">
                 <a href="/" class="header__a">Sign in</a>
                 <a href="/" class="header__btn btn">Start Trial</a>
             </div>
+            <span class="material-symbols-outlined menu-burger" onclick="navToggle()">
+                menu
+            </span>    
         </div>
+
 
     </header>
     <section class="intro">
@@ -76,14 +85,14 @@
                             stress, and what area would you like to work on. This way, we can fully personalize your
                             journal!</p>
 
-                        <img src="images/01.png" class="card-mage" alt="01">
+                        <img src="images/01.png" class="card-image" alt="01">
 
                     </div>
                     <div class="card">
                         <p class="card-title">Write & Understand</p>
                         <p class="card-desc">Write, draw, reflect, understand. Alivio will guide you through the prompts
                             and will help you manage your stress!</p>
-                        <img src="images/02.png" class="card-mage" alt="02">
+                        <img src="images/02.png" class="card-image" alt="02">
 
                     </div>
                     <div class="card">
@@ -108,7 +117,7 @@
                 <a href="/" class="btn btn-primary ">Let’s get started </a>
             </div>
             <a href="/" class="review__video">
-                <img src="images/play.svg" class="video-btn" alt="play">
+                <img src="images/video.jpg" class="video-cover" alt="play">
             </a>
         </div>
 
@@ -116,12 +125,13 @@
     <section class="prod">
         <div class="prod__wrapper">
             <div class="prod-image">
-                <img src="images/woman.png" alt="imagex">
+                <img class="img-woman" src="images/woman.png" alt="image-woman">
             </div>
             <div class="prod__container">
                 <h2 class="h2-prod">You tell us your stress,
                     We make your diary</h2>
-                <p class="p-prod">Everyone experiences it, and in different ways.                Бз сдфыы=Эз-зкщвЭЮУмукнщту учзукшутсуы шеб фтв шт вшааукуте цфныю
+                <p class="p-prod">Everyone experiences it, and in different ways. Бз сдфыы=Эз-зкщвЭЮУмукнщту учзукшутсуы
+                    шеб фтв шт вшааукуте цфныю
 
                     Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
                 <a class="btn btn-primary" href="/">Find Your Way</a>
@@ -130,7 +140,7 @@
     </section>
     <footer class="footer">
         <div class="footer__wrapper">
-            <a class="footer__logo" href="/"> 
+            <a class="footer__logo" href="/">
                 <img src="images/Alivio.svg" alt="footer-logo">
             </a>
             <div class="footer__ul">
@@ -150,6 +160,7 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
